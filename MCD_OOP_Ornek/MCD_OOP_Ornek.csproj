@@ -44,14 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums.cs" />
-    <Compile Include="Classlar\Musteri.cs" />
-    <Compile Include="Classlar\Urun.cs" />
-    <Compile Include="Classlar\UrunSepeti.cs" />
+    <Compile Include="Musteri.cs" />
+    <Compile Include="Urun.cs" />
+    <Compile Include="UrunSepeti.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classlar\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MCD_OOP_Ornek.Classlar
+namespace MCD_OOP_Ornek
 {
     class Musteri
     {
@@ -36,7 +36,23 @@ namespace MCD_OOP_Ornek.Classlar
 
         public void MusterininSepetiniYazdir()
         {
-           
+            
+            if (MusterininUrunSepeti.UrunListesi.Count > 0)
+            {
+                //Listeyi yazdırmadan önce doğum günü durumuna bakmanız gerekiyor.
+                if (MusterininDogumGunuMu()==true)
+                {
+                    MusterininUrunSepeti.DogumGunuHediyesiEkle();
+                    Console.WriteLine("Doğum gününüz kutlu olsun. Gofret hediyemiz sepete eklendi...");
+                }
+
+                int sayac = 1;
+                foreach (var item in MusterininUrunSepeti.UrunListesi)
+                {
+                    Console.WriteLine(sayac + ". ürünümüz: "+item.UrunAdi);
+                    sayac++;
+                }
+            }
         }
 
         #endregion

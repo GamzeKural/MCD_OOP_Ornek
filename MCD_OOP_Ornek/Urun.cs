@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MCD_OOP_Ornek.Classlar
+namespace MCD_OOP_Ornek
 {
     class Urun
     {
